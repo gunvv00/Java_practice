@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품등록</title>
+</head>
+<body>
+<form action = "good.jsp" method = "post">
+	<TABLE Border = 1 height = 100 >
+		<tr>
+			<td align = "center" colspan = "2">상품명</td>
+		</tr>
+		<tr>
+			<td align = "center" colspan = "2"><input type = "product" name="" value = "" ></td>
+		</tr>
+		<tr>
+			<td align = "center" colspan = "2">상품 이미지</td>
+		</tr>
+		<tr>
+			<td colspan = "2"><input type='file' name='file' value ="" /></td>
+		</tr>
+		<tr>
+			<td>가격</td>
+			<td><input type = "price" name="" value = "" ></td>
+		</tr>
+		
+
+</body>
+</html>

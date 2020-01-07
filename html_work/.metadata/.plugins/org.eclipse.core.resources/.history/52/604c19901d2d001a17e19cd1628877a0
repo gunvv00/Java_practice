@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action = "sava.jpg" method = "post">
+	상품코드<input type = "text" name=""><br>
+	암호<input type = "password" name=""><br/>
+	남<input type = "radio" name="gender"/>
+	여<input type = "radio" name="gender"/><br/>
+	취미 : 여행<input type = "checkbox" name="h1">
+	독서<input type = "checkbox" name="h2">
+	운동<input type = "checkbox" name="h3">
+
+</form>
+
+</body>
+</html>

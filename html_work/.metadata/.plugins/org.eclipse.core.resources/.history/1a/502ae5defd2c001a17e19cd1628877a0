@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+</style>
+</head>
+<body>
+<div style="background-color:red">
+div 태그는 안에 내용을 감싸고 있는 box형태1
+</div>
+<div>
+div 태그는 안에 내용을 감싸고 있는 box형태2
+</div>
+</body>
+</html>

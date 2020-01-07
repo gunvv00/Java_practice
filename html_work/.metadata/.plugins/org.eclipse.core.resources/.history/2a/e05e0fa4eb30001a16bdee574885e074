@@ -1,0 +1,11 @@
+package practice;
+
+public class Practice01 {
+	public static void main(String[] args) {
+		int[] score = new int[6];
+		score[2] = 100;
+		int value = score[2];
+		System.out.println(value);
+	}
+
+}

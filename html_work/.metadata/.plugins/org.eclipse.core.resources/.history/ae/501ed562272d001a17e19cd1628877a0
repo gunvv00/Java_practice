@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="save.jsp" method="post" >
+	<select name = "job" multiple>
+		<option value="">--선택--</option>
+		<option value="j1">군인</option>
+		<option value="j2" selected>학생</option>
+		<option value="j3" disabled>주부</option>
+	</select>
+	<br/>
+	<input type = "submit" value = "저장">
+	<br/>
+	<textarea name = "" rows = "" cols=""> 병량이 엉덩이는 빨개 </textarea>
+</form>
+
+</body>
+</html>
