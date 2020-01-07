@@ -1,0 +1,14 @@
+package st02.ch01;
+
+public class VarEx4 {
+
+	public static void main(String[] args) {
+		int kor = 80, eng = 90;
+		int sum = kor + eng;
+		int avg = kor / eng;
+		
+		System.out.println("ÇÕ°è : " + sum);
+		System.out.println("Æò±Õ : " + avg);
+	}
+
+}
