@@ -1,0 +1,31 @@
+package practice;
+
+public class ArrayEx14 {
+
+	public static void main(String[] args) {
+		int[][] score = new int[5][3];
+		int sum[] = new int[5];
+		int avg[] = new int[5];
+
+		for (int col = 0; col < score.length; col++) {
+			for (int row = 0; row < score[col].length; row++) {
+				score[col][row] = (int) (Math.random() * 100);
+				sum[col] += score[col][row];
+				avg[col] += score[col][row] / 3;
+			}
+		}
+		System.out.println("번호\t국어\t영어\t수학\t총점\t평균");
+		System.out.println("==============================================");
+
+		for (int col = 0; col < score.length; col++) {
+			System.out.print(col + 1 + "\t");
+			for (int row = 0; row < score[col].length; row++) {
+				System.out.print(score[col][row] + "\t");
+
+			}
+			System.out.print(sum[col] + "\t");
+			System.out.print(avg[col] + "\t");
+		}
+	}
+
+}
