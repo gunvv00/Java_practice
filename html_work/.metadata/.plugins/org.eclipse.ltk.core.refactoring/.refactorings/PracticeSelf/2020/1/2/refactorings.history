@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;practice.middleTest&apos; to &apos;middleTest2&apos;&#x0D;&#x0A;- Original project: &apos;PracticeSelf&apos;&#x0D;&#x0A;- Original element: &apos;practice.middleTest&apos;&#x0D;&#x0A;- Renamed element: &apos;practice.middleTest2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;middleTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;practice{middleTest.java[middleTest" matchStrategy="1" name="middleTest2" qualified="false" references="true" similarDeclarations="false" stamp="1578552951633" textual="false" version="1.0"/>
+</session>
