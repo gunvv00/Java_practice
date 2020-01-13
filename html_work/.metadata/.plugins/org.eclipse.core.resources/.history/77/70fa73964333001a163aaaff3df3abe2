@@ -1,0 +1,16 @@
+package practice;
+
+public class middleTest4 {
+
+	public static void main(String[] args) {
+		int[][] dan = new int[8][9];
+
+		for (int col = 1; col < 9; col++) {
+			for (int row = 1; row < 10; row++) {
+				System.out.print(dan[row][col]);
+			}
+		}
+
+	}
+
+}

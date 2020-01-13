@@ -1,0 +1,18 @@
+package practice;
+
+import java.util.Scanner;
+
+public class middleTest8 {
+	public static void main(String[] args) {
+		
+		middleTest8 mt = new middleTest8();
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		mt.test(inpu);
+	}
+	
+	public void test(int n) {
+		
+	}
+
+}

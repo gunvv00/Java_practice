@@ -1,0 +1,17 @@
+package practice;
+
+public class ShowHi {
+
+	public static void main(String[] args) {
+		
+		int result = show(3);
+
+	}
+	static int show(int number) {
+		for(int i = 0; i < number; i++ ) {
+			System.out.println("Hi~");
+		}
+		return number;
+	}
+
+}

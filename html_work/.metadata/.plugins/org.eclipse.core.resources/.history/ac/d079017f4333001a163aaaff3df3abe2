@@ -1,0 +1,12 @@
+package practice;
+
+public class middleTest4 {
+
+	public static void main(String[] args) {
+		int[][] dan = new int[8][9];
+		
+		for()
+
+	}
+
+}

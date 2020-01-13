@@ -26,7 +26,7 @@ public class middleTest3 {
 			}
 		}
 		System.out.println("È¦¼ö ÀÎµ¦½º : " + hol);
-		System.out.println("È¦¼ö ÀÎµ¦½º : " + jjak);
+		System.out.println("Â¦¼ö ÀÎµ¦½º : " + jjak);
 	}
 
 }

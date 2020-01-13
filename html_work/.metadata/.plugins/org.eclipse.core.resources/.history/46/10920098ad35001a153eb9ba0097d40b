@@ -1,0 +1,14 @@
+package practice;
+
+public class middleTest8 {
+	public static void main(String[] args) {
+		
+		middleTest8 mt = new middleTest8();
+		mt.test(5);
+	}
+	
+	public void test(int n) {
+		
+	}
+
+}

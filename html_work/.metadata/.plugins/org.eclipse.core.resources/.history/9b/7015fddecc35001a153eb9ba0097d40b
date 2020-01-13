@@ -1,0 +1,29 @@
+package practice;
+
+import java.util.*;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("1~100사이의 수를 입력하시오 : ");
+		int number = input.nextInt();
+		int primeNumber = serchPrime(1);
+		
+		System.out.print(number);
+
+	}
+	 static int serchPrime(int number) {
+		
+		boolean primeNumber = true;
+		boolean notPrimeNumber = false;
+		
+		if(number % 1 == number && number % number == 1) {
+			System.out.println(primeNumber);
+		}else {
+			System.out.println(notPrimeNumber);
+			
+		}return number;
+	}
+
+}

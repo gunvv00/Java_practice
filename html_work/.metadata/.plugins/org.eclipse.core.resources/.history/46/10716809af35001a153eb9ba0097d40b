@@ -1,0 +1,18 @@
+package practice;
+
+public class middleTest8 {
+	public static void main(String[] args) {
+		
+		middleTest8 mt = new middleTest8();
+		mt.test(5);
+		
+	}
+	static int test(int n) {
+		
+		int result = 0;
+		result = n * test(n-1);
+		
+		return result;
+	}
+
+}
