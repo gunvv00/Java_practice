@@ -4,11 +4,12 @@ public class FlexibleCompanyDemo {
 
 	public static void main(String[] args) {
 		
-		Employee[] workers = new Employee[3];
+		Employee[] workers = new Employee[4];
 		
 		workers[0] = new MereClerk("철수", 100);
 		workers[1] = new MereClerk("영희", 100);
 		workers[2] = new Manager("홍길동", 200);
+		workers[3] = new Alba("영철", 100);
 		
 		System.out.println("현재 월급입니다.");
 		
@@ -19,7 +20,7 @@ public class FlexibleCompanyDemo {
 		
 		System.out.println("인상된 월급입니다.");
 		
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < 4; i++) {
 			workers[i].manageSalary(10);
 			System.out.println(workers[i].getName() + "의 인상된 월급은 " + workers[i].getSalary() + "입니다.");
 		}
@@ -47,6 +48,7 @@ abstract class Employee {
 	
 	public void manageSalary(double rate) {}
 	
+	
 }
 
 class MereClerk extends Employee {
@@ -54,7 +56,7 @@ class MereClerk extends Employee {
 		super(name,salary);
 	}
 	
-	public void ManageSalary(double rate) {
+	public void manageSalary(double rate) {
 		salary = salary + salary*(rate/100);
 		
 	}
@@ -68,6 +70,17 @@ class Manager extends Employee {
 	public void manageSalary(double rate) {
 		salary = salary + salary*(rate/100);
 		salary += 20;
+	}
+}
+
+class Alba extends Employee {
+	public Alba(String name, double salary) {
+		super(name,salary);
+	}
+	
+	public void manageSalary(double rate) {
+		salary = salary + salary*(rate/100);
+		salary -= 20;
 	}
 }
 

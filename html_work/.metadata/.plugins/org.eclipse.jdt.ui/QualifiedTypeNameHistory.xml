@@ -48,7 +48,13 @@
 <fullyQualifiedTypeName name="designSelf.PolaroidCamera"/>
 <fullyQualifiedTypeName name="designSelf.Printable"/>
 <fullyQualifiedTypeName name="designSelf.MereClerk"/>
-<fullyQualifiedTypeName name="designSelf.Manager"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="designSelf.Alba"/>
 <fullyQualifiedTypeName name="designSelf.Employee"/>
+<fullyQualifiedTypeName name="designSelf.Manager"/>
+<fullyQualifiedTypeName name="designSelf.Employee1"/>
+<fullyQualifiedTypeName name="designSelf.MerClerkSalaryRole"/>
+<fullyQualifiedTypeName name="designSelf.SalaryRole"/>
+<fullyQualifiedTypeName name="designSelf.StudentWorker"/>
+<fullyQualifiedTypeName name="designSelf.ManagerSalaryRole"/>
 </qualifiedTypeNameHistroy>
