@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fieldset</title>
+<style>
+	ul { list-style-type:none; }
+	fieldset { border-color: lime; margin: 15px 12px;}
+	label{width:120px;background-color:lightgray;display: inline-block; text-align: center;}
+</style>
+</head>
+<body>
+	<h2>회원 가입 양식</h2>
+	<form action="save.jsp" method="post" name="memberFrm" id="memberFrm">
+		<fieldset form="memberFrm" name="memberBasic" disabled="disabled">
+			<legend>기본정보</legend>
+			<ul>
+				<li>아이디:<input type="text" name="userId"></li>
+				<li>암호:<input type="text" name="userPw"></li>
+			</ul>
+		</fieldset>
+		<fieldset form="memberFrm" name="memberAdvance">
+			<legend>추가정보</legend>
+			<ul>
+				<li><label for="userName">이름</label><input type="text" name="userName" id="userName" required = "required"></li>
+				<li><label for="userTel">전화</label><input type="text" name="userTel" id="userTel"></li>
+			</ul>
+		</fieldset>
+	      <input type="submit" value="가입하기"></input>
+	</form>
+</body>
+</html>

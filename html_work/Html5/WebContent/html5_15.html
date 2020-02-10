@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+	* {
+		margin:0px;
+		padding:0px;
+	}
+	#content {
+		width:480px;
+		/*border: 1px solid red;*/
+		float:left;
+	}
+	.header , .footer{
+		background-color:lime;
+	}
+.pic1{
+		background-image:url(./img/product01.JPG);
+		background-repeat:no-repeat;
+		height:181px;
+		width:156px;
+		float:left
+	}
+.pic2{
+		background-image:url(./img/product02.JPG);
+		background-repeat:no-repeat;
+		height:181px;
+		width:156px;
+		float:left
+	}
+ .picLabel{ position:relative;left:30px;top:110px; color:blue; }
+ .picLabel2{ position:relative;left:-10px;top:125px; color:red;text-decoration: line-through;}
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1> 상품리스트 </h1>
+	</div>
+	<!--style="background-image:url(..//img/back01.GIF);"-->
+	<div id="content" >
+
+		<div class="pic1">
+			<span class="picLabel">상품</span>
+			<span class="picLabel2">1000원</span>
+		</div>
+		<div class="pic2">
+			<span class="picLabel">상품</span>
+			<span class="picLabel2">2000원</span>
+		</div>
+		<div class="pic1"><span class="picLabel">상품</span>
+		<span class="picLabel2">1000원</span>
+		</div>
+		<div class="pic2"><span class="picLabel">상품</span>
+		<span class="picLabel2">1000원</span>
+		</div>
+		<div class="pic1">
+			<span class="picLabel">상품</span>
+			<span class="picLabel2">1000원</span>
+		</div>
+	</div>
+	<div class="footer" style="clear:both">
+		<p>COPYRIGHT &copy; 2014 school co.lte allright reserved</p>
+	</div>
+</body>
+</html>

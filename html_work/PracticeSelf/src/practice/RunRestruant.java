@@ -17,7 +17,7 @@ import java.util.Random;
 class Restaurant {
 //필드(변수): 명사
    int money = 100000;
-   String[] foods = {"떡볶이","순대","라면","쫄면"};
+   String[] foods = {"짜장면","짬뽕","팔보채","탕수육"};
    int sel; //필드 변수는 자동으로 초기화 됨
    
    //메소드(기능) : 동사

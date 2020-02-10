@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	table { border:1px solid gray; border-collapse:collapse;}
+	/*td, th { border:1px solid gray; padding:10px; }*/
+	td{
+	border:1px solid black;
+		margin-left:0;
+	padding:5px;
+
+}
+th{
+	border:1px solid black;
+	margin-right:0;
+	padding:5px	;
+	width:130px;
+}
+tfoot{
+	background-color:#CCC;
+	font-weight:bold;
+	text-align:center;	
+}
+thead{
+	background-color:#CCC;	
+}
+caption {
+	font-size: large; color:blue; caption-side:bottom;
+}
+</style>
+</head>
+<body>
+	<section>
+		<article>
+        	<table>
+        	  <caption>컴퓨터 부품 정보</caption>
+        	  <thead>
+	          <tr>
+	            <th>부품명</th>
+	            <th>제조사</th>
+	            <th>수량</th>
+	            <th>가격</th>
+	          </tr>
+	          </thead>
+	          <tfoot>
+	          <tr>
+	            <td colspan="4">묶음으로 한번에 배송합니다.</td>
+	          </tr>
+	          </tfoot>
+	          <tbody> 
+	          <tr>
+	            <th>CPU</th>
+	            <td>Intel</td>
+	            <td rowspan="3">각각 1개</td>
+	            <td rowspan="4">54,000원</td>
+	          </tr>
+	          <tr>
+	            <th rowspan="2">RAM</th>
+	            <td>SSamssung</td>            
+	          </tr>
+	          <tr>
+	            <td>Hynax</td>           
+	          </tr>  
+	          <tr>
+	            <th>SSD</th>
+	            <td>SeeGate</td>
+	            <td>2개</td>            
+	          </tr>
+	          </tbody>
+	          
+        	</table>
+		</article>
+	</section>
+</body>
+</html>

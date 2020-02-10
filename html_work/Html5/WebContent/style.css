@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.menu01 { list-style: none;}
+	.menu01  li {float:left; margin-right:10px;}
+	.main {clear:left; margin-top: 60px;}
+	a:link { text-decoration:none;}
+	
+	h3 { background:url(./img/li_lcon.GIF) no-repeat left center;
+	   padding-left:20px; }
