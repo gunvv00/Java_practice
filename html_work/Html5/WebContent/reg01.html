@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.member_join_box { width:95%; height:130px;background-color: #389; color:white;}
+	.step1 , .step2 { float:left; margin-right:30px;}
+	.step4{clear:left;margin-top:60px; font-size: 13px; color:navy;}
+	#nextBtnDiv { width:1px;margin:0 auto;}
+	.step1 {color:white;}
+	.step2, .step3 {color:orange;}
+</style>
+</head>
+<body>
+<section>
+	<h1>회원가입</h1>
+	<div class="member_join_box">
+		<ol>
+			<li class="step1">이용약관 및<br/>
+				개인정보수집 및<br/>
+				이용에 관한 동의
+			</li>
+			<li class="step2">본인인증및<br/>
+				개인정보수집 및<br/>
+				이용에 관한 동의
+			</li>
+			<li class="step3">회원가입 완료
+			</li>			
+		</ol>
+		<p class="step4">이용약관 및 개인정보수집 및 이용에 관한 동의</p>
+	</div>
+	<div>
+		<input type="checkbox">모두 동의합니다.
+	</div>
+	<iframe src="terms.html" width="900px" height="250px;"></iframe>
+	<div><input type="checkbox">서비스 이용약관에 동의합니다.</div>
+	<div id="nextBtnDiv"><input type="button" onclick="next()" value="다음"></div>
+</section>
+</body>
+</html>
