@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\html01" path="/html01" reloadable="true" source="org.eclipse.jst.jee.server:html01"/><Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Html5" path="/Html5" reloadable="true" source="org.eclipse.jst.jee.server:Html5"/></Host>
+      <Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\html01" path="/html01" reloadable="true" source="org.eclipse.jst.jee.server:html01"/><Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Html5" path="/Html5" reloadable="true" source="org.eclipse.jst.jee.server:Html5"/><Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\javascript01" path="/javascript01" reloadable="true" source="org.eclipse.jst.jee.server:javascript01"/><Context docBase="C:\java_src\html_work\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\simple" path="/simple" reloadable="true" source="org.eclipse.jst.jee.server:simple"/></Host>
     </Engine>
   </Service>
 </Server>

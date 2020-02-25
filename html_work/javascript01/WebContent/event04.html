@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+/*
+  addEventListener(event, function [, useCapture]) : 선택한 요소에 event를 붙여 준다.
+   하나 이상 붙여 줄 수 있으며  removeEventListener를 이용하여 삭제할 수 있다.
+   event : click, mousedown등의 event 종류
+   function : event 발생시 실행할 function
+   useCapture : event를 bubbling or capturing 단계에서 실행할지 여부 기본 값은 false
+
+  removeEventListener(event, function) : 선택한 요소에 event를 삭제한다.
+  event : addEventListener로 추가한 이벤트 종류
+  function : event 발생시 실행할 function
+
+*/
+   function handler() {
+				var nickNameObj = document.getElementById('nickName');
+        //var btnValue = window.event.srcElement.innerHTML;
+				 alert("nickName:" + nickNameObj.value);
+    }
+window.onload = function(){//무조건 한번은 실행됨
+	var chk = document.getElementById('chk');
+	if (chk.attachEvent) {
+		chk.attachEvent("onclick", handler);
+	}else {
+		chk.addEventListener('click', handler, false);
+	}
+};
+
+  function rmEvent(){//호출하기전까진 실행안됨
+    var chk = document.getElementById('chk');
+    chk.removeEventListener('click', handler);
+  }
+    </script>
+</head>
+<body>
+	<input type="text" id="nickName">
+	<input type="button"  id="chk" value="닉네임확인">
+  <input type="button"  id="chk" value="이벤트삭제" onclick="rmEvent()">
+</body>
+</html>

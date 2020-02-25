@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function prn() {
+		var windowValue = document.f1.win.value;
+		var windowChecked = document.f1.win.checked;/*체크가 됬는지 안됬는지 확인*/
+		
+		//var hobbyValue = document.f1.hobby.value;
+		
+		
+		//alert(windowValue + ":" + windowChecked);
+		
+		var hobbyArr = document.f1.hobby;
+		var msg = new Array();
+		var cnt = 0;
+		for(var i = 0 ; i < hobbyArr.length; i++) {
+			if(hobbyArr[i].checked == true) {
+				msg[cnt] = hobbyArr[i].value;
+				cnt++;
+			}
+		}
+		//취미를 alert으로 출력하는데 자전거가 선택되면 자전거
+		//자전거 음악이 선택되면 자전거:음악과 같이 출력하시오
+		alert(msg.join(":"));
+	}
+	
+	
+	/*HTML에서 name을 한개로 여러개를 생성해 두면 자바스크립트에서 데이터를 가져올때 같은 name을 가진 데이터는 배열로 받아온다*/
+</script>
+</head>
+<body>
+
+<form name = "f1">
+	window <input type = "checkbox" name = "win" value = "w" ><br/>
+<hr>
+	자전거<input type="checkbox" name = "hobby" value ="자전거"><br/>
+	영화<input type="checkbox"  name = "hobby" value ="영화"><br/>
+	음악<input type="checkbox" name = "hobby" value ="음악" ><br/>
+	<input type="button" value = "테스트" onclick="prn()">
+</form>
+
+</body>
+</html>

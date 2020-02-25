@@ -22,6 +22,14 @@ public class Ex02 {
 		
 		System.out.println("¿Ã∏ß:" + name + "\n" + "√—¡°:" + sum + "\n" + "∆Ú±’:" + avg);
 		
+		
+		int[][] a = new int[10][20];
+		
+		for(int i = 0; i < a[i].length; i++ ) {
+			for(int j = 0; j < a[j].length; j++) {
+				
+			}
+		}
 	}
 
 }

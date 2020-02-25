@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function check(event) {
+		if (event.keyCode == 96 || event.keyCode == 126) {
+			if (event.shiftKey)
+				alert("shift + keyCode:" + event.keyCode);
+			else
+				alert(" keyCode:" + event.keyCode);
+		}
+
+	}
+</script>
+</head>
+<body>
+	<H2>keyboard event</H2>
+	<FORM name="f1">
+		<INPUT TYPE="TEXT" VALUE="" onKeyPress="check(event)" name="userId">
+		<INPUT TYPE="BUTTON" VALUE="BUTTON 2">
+	</FORM>
+	<div id="log"></div>
+</body>
+</html>

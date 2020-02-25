@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var str = "1 + 3";
+	var str2 = encodeURI("한글데이터");
+	
+	var num = eval(str);
+	var msg = decodeURI(str2);
+	
+	document.write("num : " + num + "<br>");
+	document.write("str2 : " + str2 + "<br>");
+	document.write("msg : " + msg + "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<script>
+    function save(){
+		var chk;
+		chk = confirm('저장?');
+		if(chk == true){
+			document.f1.data1.value = '저장 진행...';/*body안으로 접근하기위해 document를 선언후
+												    form의 이름을 f1선언하고 input의 이름인
+												    data1로 들어간후 value값으로 접근
+												    (->document.f1.data1.value)         */ 
+		}else {
+			document.f1.data1.value = '저장 취소...';
+		}
+    }
+
+</script>
+</head>
+<body>
+	<form action="save.jsp" name="f1">
+		<input type="text" value="" name="data1"> <br> 
+		<input type="button" value="저장" onclick="save()">
+	</form>
+</body>
+</html>

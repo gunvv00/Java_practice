@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>math 03</TITLE>
+<meta charset="UTF-8">
+<script>
+function msg(){/*페이지 계산 메소드 느낌(?)*/
+	var cnt = 125;  
+	var pageRow = 10;  
+
+	list = cnt / pageRow;/*12.5*/
+	list1 = Math.floor(cnt / pageRow);/*무조건 버리기*/
+	list2 = Math.ceil(cnt / pageRow);/*무조건 올리기*/
+	list3 = Math.round(cnt / pageRow)/*반올림*/
+
+	alert(list1);
+	alert(list2);
+	alert(list3);
+}
+</script>
+</HEAD>
+<BODY >
+<form name="f1">
+<P><input type="button" onclick="msg()" value="math " name="btn">
+</form>
+</BODY>
+</HTML>

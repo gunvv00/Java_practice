@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var a = 10 * "aa";
+	var b = 10 * 20;
+	
+	var str1 = "10", str2 = "20";
+	var str3 = "1.2" , str4 = "1.4";
+	
+	var f1 = parseFloat(str3) + parseFloat(str4);
+	
+	document.write("a = " + a + "<br>");
+	document.write("isNaN(a) = " + isNaN(a) + "<br>");
+	document.write("b = " + b + "<br>");
+	document.write("isNaN(b) = " + isNaN(b) + "<br>");
+	
+	
+	document.write("str1 + str2 = " + ( parseInt(str1) + parseInt(str2) ) + "<br>");
+	document.write("str3 + str4 = " + ( f1.toFixed(1) ) + "<br>");
+	document.write("str3  = " + ( parseFloat(str3) ) + "<br>");
+	
+	document.write("isFinite(\"1234\")  = " + ( isFinite("1234") ) + "<br>");      // -10 / 0은 음의 무한대
+	document.write("isFinite(\"ab123\")  = " + ( isFinite("ab123") ) + "<br>");
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

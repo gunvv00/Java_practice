@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var p = /(http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-.\/?%&=]*)?)/gi;
+	// var p = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-.\/?%&=]*)?/gi;
+	//  앞의 예제 처럼 바깥쪽 (  ) 가 없으면 정상동작을 하지 않는다.
+	var str = '서포트사이트는 http://www.wings.msn.go/이다.';
+
+	document.writeln(str.replace(p, '<a href="$1">$1</a>'));//URL을 찾아서 문자열에 링크를 걸어줌
+</script>
+</head>
+<body>
+
+</body>
+</html>

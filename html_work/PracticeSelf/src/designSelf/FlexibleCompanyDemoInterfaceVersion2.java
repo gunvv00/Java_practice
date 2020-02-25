@@ -83,7 +83,8 @@ class WomanWorker extends HumanWorker1 {
 
 
 abstract class Animal implements Worker {
-	Sting name
+	String name;
+	SalaryRole salaryRole = null;
 }
 
 

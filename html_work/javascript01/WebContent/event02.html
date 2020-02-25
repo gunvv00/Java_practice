@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+	function chk(event){//event에는 마우스/키보드로 발생시킨 정보가 넘거감 
+    	var obj = document.getElementById('nickName');
+		alert("nickName:" + ":"+ obj.value);
+	}
+	
+	function mouseInfo(event) {
+		console.log("x" + event.clientX + "y" + event.clientY);
+		
+	}
+</script>
+</head>
+<body>
+	<div style ="width : 200px; height:200px; border: 1px solid blue;" onmousemove="mouseInfo(event)"></div>
+	<input type="text" id="nickName">
+  <input type="button" id="btn" onclick="chk(event)" value="버튼">
+</body>
+</html>

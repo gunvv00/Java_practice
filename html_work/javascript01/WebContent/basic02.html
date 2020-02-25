@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var a = 11, b = 21, name = '홍길동'; // "" 
+	var c = 3.4, chk = true;
+	
+	
+	document.write("javascript basic02 <br/>");
+	document.write("a : ", a, "b : " , b, " a + b = " , (a+b) , "<br/>")
+	document.write("name : ", name ,"<br/>");
+	
+	var result = (a > b) ? 'a가 크다' : 'b가 크다';
+	document.write("result : " + result);
+
+	
+	function cls(){
+		document.open();
+		docuemnt.clear();
+		document.close();
+	}
+</script>
+</head>
+<body>
+<input type="button" onclick="cls()" value="cls">
+</body>
+</html>

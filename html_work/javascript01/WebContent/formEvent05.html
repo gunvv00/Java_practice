@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+document.getElementById(아이디명) : id이름으로 html 객체를 찾아서 리턴한다.
+html객체.innerHTML : html 요소의 html 내용를 가리키는 속성으로 html를 
+                      리턴 받거나 다른 내용으로 변경할 수 있다.
+ 
+ */
+function chk(){
+	var loginIdObj = f1.loginId;
+	if(loginIdObj.value == ''){//아이디 텍스트창에 아무것도 입력하지않았다면
+		//alert('아이디를 입력하세요.');
+		var loginIdLogObj = document.getElementById('userIdLog');//userIdLog의 값에 접근한후
+		loginIdLogObj.innerHTML = '아이디를 입력하세요.'.fontcolor('red');//폰트를 빨간색으로 해서 문자열을 화면에 보여줌
+		loginIdObj.focus();//아이디창에 커서를 생성해서 더 좋은 인터페이스를 구성함
+		return;
+	}else {
+		var loginIdLogObj = document.getElementById('userIdLog');
+		loginIdLogObj.innerHTML = '';
+	}
+	
+}
+
+	function clearErr() {
+		var loginIdLogObj = document.getElementById('userIdLog');
+		loginIdLogObj.innerHTML = '';
+	}
+  
+  
+</script>
+</head>
+<body>
+	<form method="post" action="memRegProc.jsp" name="f1">
+	<table border="1" cellspacing="0" width="500">
+		<tr>
+			<td colspan="2" align="center" bgcolor="lightgray">회원가입</td>
+		</tr>
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" value="" name="loginId" id="loginId" onclick="clearErr()">
+			    <input type="button" value="중복확인">
+			    <span id="userIdLog"></span>
+			</td>
+		</tr>
+
+	</table>
+	<input type="button" value="회원가입" onclick="chk()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+select
+  selectedIndex : select 태그에서 선택한 option의 index 를 가지고 있는 속성
+  options : select의 속한 option들을 배열로 가지고 있으며 value를 option의
+            value를 label은 option의 label 값을 정의 한다.
+*/
+	function chgCombo(){
+		var jobObj = f1.job;
+		var selectedIdx = jobObj.selectedIndex;
+		f1.jobValue.value = jobObj.options[selectedIdx].value;
+	    //select에서 선택한 value를 text value에 값을 넣는다	
+	    
+	}//회원가입 할때 직업이나 뭔가 값을 받을때 필요함
+	
+	function proc() {
+		var jobObj = f1.job;
+		var selectedIdx = jobObj.selectedIdx;
+		if(selectedIdx == 0){//보통 select에서 0번째 인덱스는 카테고리를 알려주므로 다른것을 선택할수있게 해야한다
+			alert('직업을 선택해주세요');
+			return;
+		}
+	}
+	
+	//onChange 값이 변할때 사용되어 진다 
+</script>
+</head>
+<body>
+<form name="f1">
+	직업<select name="job" id="job" onChange="chgCombo()">
+		<option value="선택">--선택--</option>
+		<option value="군인">군인</option>
+		<option value="회사원">회사원</option>
+		<option value="공무원">공무원</option>
+		<option value="교사">교사</option>
+	   </select> <br>
+	선택한 직업:<input type="text" value="" name="jobValue"/> <br/>
+	<input type="button" value="결과" onclick="proc()"/><br/>
+</form>
+</body>
+</html>

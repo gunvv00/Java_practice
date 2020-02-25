@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var p = /^[0-9]{1,/*하나이상*/}/g/*전체에서 찾겠다*/i/*대소문자 구분 ㄴㄴ*/
+	var str = "101 마리의 강아지.\n7인의 아이들";//\n때문에 2줄임
+	var result = str.match(p);//2줄에서 101,7을 찾았기때문에 배열로 저장
+	for(var i = 0; i < result.length; i++){//배열로 저장되었기 때문에 for문을 통해 
+		document.write(result[i]+"<br>");
+	}
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

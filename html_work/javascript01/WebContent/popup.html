@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function setLoginId(){
+		opener.f1.loginId.value = document.f2.loginId.value;
+	}
+	function closeSelf(){
+		self.close();
+	}
+</script>
+</head>
+<body>
+<form name="f2">
+<input type="text" name="loginId">
+<input type="button" value="아이디사용" onclick="setLoginId()"> 
+<input type="button" value="창닫기" onclick="closeSelf()">
+
+</form>
+</body>
+</html>

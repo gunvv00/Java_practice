@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<TITLE>New Document</TITLE>
+<script>
+	//document.onmousedown=evel(); IE
+	//if (document.layers) window.captureEvents(Event.MOUSEDOWN); firefox
+	//window.onmousedown=evel(); firefox
+	function setPosition(event) {
+		f1.typeStr.value = window.event.type;
+		f1.whichStr.value = window.event.which;
+		f1.altKeyStr.value = window.event.altKey;
+		f1.ctrlKeyStr.value = window.event.ctrlKey;
+		f1.shiftKeyStr.value = window.event.shiftKey;
+		f1.x.value = window.event.screenX;
+		f1.y.value = window.event.screenY;
+		f1.px.value = window.event.pageX;
+		f1.py.value = window.event.pageY;
+		f1.cx.value = window.event.clientX;
+		f1.cy.value = window.event.clientY;
+		f1.ox.value = window.event.offsetX;
+		f1.oy.value = window.event.offsetY;
+	}
+</script>
+</HEAD>
+
+<BODY onMousedown="setPosition()">
+	<form name="f1">
+		event.screenX : <input type="text" name="x">
+		event.screenY : <input	type="text" name="y"><br>
+		event.pageX : <input type="text" name="px">
+		event.pageY : <input type="text" name="py"><br>
+		event.clientX : <input type="text" name="cx">
+		event.clientY : <input type="text" name="cy"><br>
+		event.offsetX : <input type="text" name="ox">
+		event.offsetY : <input type="text" name="oy"><br>
+		event.type<input type="text" name="typeStr"><br>
+		event.which<input type="text" name="whichStr"><br>
+		event.altKey<input type="text" name="altKeyStr"><br>
+		event.ctrlKey<input type="text" name="ctrlKeyStr"><br>
+		event.shiftKey<input type="text" name="shiftKeyStr"><br>
+	</form>
+</BODY>
+</HTML>

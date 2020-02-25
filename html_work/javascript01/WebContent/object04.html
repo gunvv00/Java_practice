@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function Product(code, name, price, qnt){
+	 this.code = code;
+	 this.name = name;
+	 this.price = price;
+	 this.qnt = qnt;
+	 
+	 this.getAmt = function(){
+		 return Number(this.price) * Number(this.qnt);
+	 };
+	 
+	 this.toString = function(){
+		 return "상품명:" +this.name + " 매출:" + this.getAmt(); 
+	 };
+}
+
+function ProductDetail(code, name, price, qnt, color){
+	this.base = Product;
+	this.base(code, name, price, qnt);
+	this.color = color;
+	
+	this.toString = function(){
+		// fontcolor(color) 는 fontcolor 속성을 html에 추가해준다.  
+		return this.name.fontcolor(this.color);
+	}
+}
+
+var product01 = new ProductDetail('A-100', "빠르다 컴", 120000, 3, 'red')
+document.write(product01.toString());
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

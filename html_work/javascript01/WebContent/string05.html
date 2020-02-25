@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+ \w : word를 표현하면 알파벳 + 숫자 + _ 중의 한문자임을 의미한다.
+ \W : 알파벳 + 숫자 + _ 이 아닌 문자를 의미한다.
+ 
+ http://www.wings.msn.go/member/
+ 
+ */
+	var p = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-.\/?%&=]*)?/gi;
+	var str1 = '서포트사이트는 http://www.wings.msn.go/이다.';
+	var str2 = '서포트사이트서버사이드의기술의학습장';
+	
+	document.writeln(p.test(str1)); // true 매치 데이터가 있는지 체크한다.
+	document.writeln(p.test(str2)); // false
+
+	document.writeln(str1.search(p)); // 8
+	document.writeln(str2.search(p)); // -1
+</script>
+</head>
+<body>
+
+</body>
+</html>

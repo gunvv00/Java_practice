@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/**
+checkbox
+   checked : 체크박스가 체크가 되었으면 true 안되었으면 false
+radio
+   checked : 라디오 체크가 되었으면 true 안되었으면 false
+
+form 객체에 name이 같으면 배열이 된다.   
+   */
+   function chk(){
+	   var foodObjs = f1.food;
+	   var resultObj = f1.result;
+	   resultObj.value = "";//원래의 값을 지워준다
+	   
+	   for(var i = 0; i < foodObjs.length; i++){
+		   if(foodObjs[i].checked == true){
+			   resultObj.value = resultObj.value + ',' 
+			                        + foodObjs[i].value; 
+		   }
+	   }
+   }
+   
+   function chk2(){
+	   var genderObjs = f1.gender;
+	   alert(genderObjs.value);
+   }
+</script>
+</head>
+<body>
+<form name="f1">
+	취미<br>
+	<input type="checkbox" name="hobby1" value="h1">영화 
+	<input type="checkbox" name="hobby2" value="h2">음악
+	<input type="checkbox" name="hobby3" value="h3">운동
+	식사<br>
+	<input type="checkbox" name="food" value="f1">김치찌게 
+	<input type="checkbox" name="food" value="f2">제육볶음
+	<input type="checkbox" name="food" value="f3">미역국
+	<br/>
+	남여
+	<input type="radio" name="gender" value="M">남 
+	<input type="radio" name="gender" value="F">여
+	<input type="text" name="result" />
+	<br/>
+	<input type="button" onclick="chk()" value="확인"/>
+	<input type="button" onclick="chk2()" value="확인2"/>
+</form>
+</body>
+</html>

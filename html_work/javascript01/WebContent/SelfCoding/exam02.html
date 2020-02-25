@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function submitProc() {
+		var loginIdObj = document.f1.loginId;
+		var emailObj = document.f1.email;
+		var telObj = document.f1.tel;
+		var passwdObj = document.f1.loginPw;
+		var chkPwObj = document.f1.chkPw;
+		
+		if (loginIdObj.value == '') { // 이름입력 체크
+			alert('이름을 입력하세요');
+			return;
+		}else if(loginIdObj.value.length < 8 || loginIdObj.value.length > 16 ) {
+			alert('아이디는 8~16자로 입력하세요.');
+			return;		
+		}
+		
+		if(emailObj.value == ''){
+			alert('이메일을 입력하세요');
+			return;
+		}else if(emailObj.value.indexOf('@') == -1 || emailObj.value.indexOf('.')== -1 ) {
+			alert('이메일을 정확하게 입력 하세요');
+			return;
+		}
+		
+		if(telObj.value == '') {
+			alert('전화번호를 입력하세요')
+			return;
+		}else if(!isTel(telObj.value)) {
+			alert('전화번호를 정확히 입력하세요')
+			return;
+		}
+		
+		if(passwdObj.value ==''){
+			alert('비밀번호를 입력하시오.');
+			return;
+		}
+		
+		if(passwdObj.value !=chkPwObj.value){
+			alert('비밀번호가 다릅니다.');
+			return;
+		}
+		
+		
+		document.f1.submit();
+
+	}
+	function isTel(str) { //전화번호는 입력 여부 체크 (숫자와 -로 만 입력 받는다)
+		var chk = true;
+		for(var i = 0; i < str.length; i++) {
+			if(str.charAt(i) >= '0' && str.charAt(i) <= '9' || str.charAt(i) == '-') {
+	
+			}else {
+				chk = false;
+				break;
+			}
+		}
+		return chk;
+	}
+</script>
+</head>
+<body>
+	<!--
+회원가입 버튼을 만들고 아래 내용을 체크해서 오류가 있으면 submit을
+메세지를 출력하고 진행하지 말고 오류가 없으면 진행하시오.
+
+1. 아이디 입력 여부 체크 (8글자~16글자) O
+2. 암호 입력 여부 체크 and 암호 입력확인과 값이 같은지 확인 O
+3. 이름 입력 여부 체크 O
+4. email 입력 여부 체크 ( @이 포함되어 있어야 하고 . 도 포함되어 있어야한다.) O
+5. 전화번호는 입력 여부 체그 (숫자와 -로 만 입력 받는다)O
+6. 직업 입력 여부확인
+7. 성별 입력 여부확인
+8. 취미 입력 여부확인
+ -->
+	<form method="post" action="memRegProc.jsp" name="f1">
+		<table border="1" cellspacing="0" width="500">
+			<tr>
+				<td colspan="2" align="center" bgcolor="lightgray">회원가입</td>
+			</tr>
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" value="" name="loginId"> <input
+					type="button" value="중복확인"></td>
+			</tr>
+			<tr>
+				<td>암호</td>
+				<td><input type="password" name="loginPw"></td>
+			</tr>
+			<tr>
+				<td>암호확인</td>
+				<td><input type="password" name="chkPw"></td>
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>이메일</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>전화번호</td>
+				<td><input type="text" name="tel"></td>
+			</tr>
+			<tr>
+				<td>직업</td>
+				<td><select name="job">
+						<option value="">선택
+						<option value="a">군인
+						<option value="b">학생
+						<option value="c">주부
+				</select></td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td>남<input type="radio" name="gender" value="m"> 여<input
+					type="radio" name="gender" value="f">
+				</td>
+			</tr>
+			<tr>
+				<td>취미</td>
+				<td>영화<input type="checkbox" name="hobby" value="h1">
+					음악<input type="checkbox" name="hobby" value="h2"> 운동<input
+					type="checkbox" name="hobby" value="h3">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button"
+					onclick="submitProc()" value="회원가입" /></td>
+			</tr>
+		</table>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+ setInterval(function, interval) : interval에 해당하는 milliseconds마다 매번 function을 실행한다. 
+ clearInterval(intervalObj) : intervalObj에 해당하는 interval을 중지한다.
+ setTimeout(function, second) : second에 해당하는 milliseconds 이후에 한번 function을 실행한다.
+ */
+window.onload = function(){
+  var clock = document.getElementById('clock');
+  setInterval(function(){
+	  var now = new Date();
+	  clock.innerHTML = now.toString();
+  }, 1000);
+  
+  setTimeout(function(){
+	  var msg = document.getElementById('msg');
+	  msg.innerHTML = '타이머 셋팅';
+  },3000);
+  
+}
+ 
+ function prn(){
+	 alert('그림이 다 로딩이 됨');
+ }
+</script>
+</head>
+<body>
+	<img src="./one.GIF" onload="prn()">
+     <h3 id="msg"></h3>
+    <h3 id="clock"></h3>
+</body>
+</html>

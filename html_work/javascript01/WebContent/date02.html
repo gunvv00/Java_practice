@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <script>
+	var now = new Date();//Date객체 생성
+	var someDay = new Date(2016,1/*2월임*/,20);//특정 년,월,일을 생성함
+
+	var y = someDay.getFullYear();
+	var m = someDay.getMonth();
+	var d = someDay.getDate();
+	document.write(y + "년" + (m+1) + "월" + d + "일<br>");
+	
+	if(now > someDay){
+		document.write("someDay는 now보다 작다");
+	}else {
+		document.write("someDay는 now보다 크거나 같다 ")
+	}
+	
+	document.write(now.toString());
+	
+ </script>
+</head>
+<body>
+
+</body>
+</html>

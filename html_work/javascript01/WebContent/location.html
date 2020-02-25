@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+location.href : 현재 웹브라우저의 페이지의 url을 나타내는 속성 
+location.reload() : 현재 페이지를 새로 고침해주는 메소드
+*/
+function goUrl(url){
+	alert(location.href+'현재 페이지');
+	location.href = url;
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="goUrl('http://naver.com')" value="네이버" id="btn">
+<input type="button" onclick="goUrl('http://daum.net')" value="다음">
+</body>
+</html>

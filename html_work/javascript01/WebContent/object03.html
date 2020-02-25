@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function student(name, age, grade){
+	this.name = name;
+	this.age = age;
+	this.grade = grade;
+	this.prn = prn;
+}
+
+function prn(title){
+	document.write("------------"+title+"---------<br>");
+	document.write("name:"+this.name+"<br>");
+	document.write("age:",this.age,"<br>");
+	document.write("grade:",this.grade,"<br>");	
+}
+
+student01 = new student("lee",15,"A");
+student01.prn("lee 의 성적 ");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

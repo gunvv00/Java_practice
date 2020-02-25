@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function dataCheck(){
+		var nameObj = document.f1.name;
+		
+		if(nameObj.value == ''){
+			alert('이름을 입력하세요');
+			return false;
+		}
+		
+		document.f1.submit();//
+		
+	}
+/*onSubmit="return dataCheck()"*/
+</script>
+</head>
+<body>
+<form name="f1" action="save.jsp" method="get" >
+	이름:<input type="text" value="" name="name"> <br/>
+	<input type="button" onclick="dataCheck()" value="저장"/>	
+</form>
+</body>
+</html>
+
+submit은 form태그 안에있는 data를 서버로 보낼때 사용되어짐

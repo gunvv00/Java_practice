@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script>
+    	function inputData(){
+			var kor = 0, eng = 0; 
+			kor =  prompt("국어","");
+			eng = prompt("영어","");
+			var tot = parseInt(kor) + parseInt(eng);
+			var avg = tot / 2;
+			document.f1.result.value = avg;
+		}
+	
+    </script>
+ </head>
+ <body>
+ <form name="f1" >
+ <input type="button" value="국어영어 입력받기" onclick="inputData()">
+ <br> 평균:<input type="text" name="result" ><br>
+ </form>
+ </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script>
+	funtion sava(){
+		var chk;
+		chk = confirm('저장');
+		if(chk == true){
+			document.f1.data.value = '저장진행';
+		}else{
+			document.f1.data.value = '저장안함';
+		}
+	}
+	</script>
+</head>
+<body>
+	<form action="sava.jsp" name = "f1">
+		<input type="text" value= "" name = data1> <br>
+		<input type="button" value= "저장" onclik ="save()"> <br>
+	
+	</form>
+</body>
+</html>

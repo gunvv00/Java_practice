@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function upCheck(){
+		opener.f1.userId.value = document.f1.userId.value;
+		self.close();/*자기자신을 닫는다*/
+	}
+</script>
+</head>
+<body>
+<form name="f1">
+	<input type="text" name="userId" value="">
+	<input type="button" value="확인" onclick="upCheck()">
+</form>
+로그인 체크
+</body>
+</html>

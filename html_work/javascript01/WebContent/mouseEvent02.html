@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<TITLE>New Document</TITLE>
+<script>
+	function xMoveHandler(event){
+		Xpos = event.clientX; //마우스의 x위치
+		Ypos = event.clientY; //마우스의 y위치 구함
+		document.f1.x.value = Xpos;
+		document.f1.y.value = Ypos;
+	}
+
+ function MoveHandler() {
+  Xpos = document.body.scrollLeft+event.x; //마우스의 x위치 (스크롤된 값포함)
+  Ypos = document.body.scrollTop+event.y; //마우스의 y위치 (스크롤된 값포함)
+		document.f1.x.value = Xpos;
+		document.f1.y.value = Ypos;
+ } 
+
+ document.onmousemove = xMoveHandler; //마우스를 움직일때마다 MoveHandler 함수실행
+
+  </script>
+</HEAD>
+
+<BODY>
+	<form name="f1">
+		x<input type="text" name="x"> y<input type="text" name="y">
+	</form>
+</BODY>
+</HTML>
